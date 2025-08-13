@@ -1,0 +1,9 @@
+Guide de publicité conforme HIPAA
+
+Ce document présente les meilleures pratiques pour assurer la conformité de vos campagnes marketing dans le secteur de la santé :
+
+1. Protégez les informations de santé protégées (PHI) : ne divulguez pas d’informations identifiables.
+2. Assurez‑vous que vos partenaires marketing signent des accords BAA.
+3. Utilisez des plateformes publicitaires respectueuses de la confidentialité.
+4. Mettez en place des procédures de consentement éclairé.
+5. Surveillez et mettez à jour régulièrement vos politiques de confidentialité.

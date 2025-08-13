@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="fr" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expérience • Mae Basiratmand • Parcours Professionnel</title>
+  <meta name="description" content="Découvrez le parcours professionnel de Mae Basiratmand à travers l'éducation, la publicité et l'enseignement international. New York, Floride, Paris.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  
+  <!-- Même CSS que les autres pages - [CSS identique omis pour la brièveté] -->
+  <style>
+    /* [Même CSS que about.html - Variables et styles de base] */
+    :root {
+      --primary-50: #f0f9ff; --primary-100: #e0f2fe; --primary-200: #bae6fd; --primary-500: #0ea5e9; --primary-600: #0284c7; --primary-700: #0369a1; --primary-900: #0c4a6e;
+      --accent-50: #fdf4ff; --accent-100: #fae8ff; --accent-200: #f5d0fe; --accent-500: #d946ef; --accent-600: #c026d3; --accent-700: #a21caf;
+      --success-50: #f0fdf4; --success-100: #dcfce7; --success-500: #22c55e; --success-600: #16a34a;
+      --warning-500: #f59e0b; --warning-600: #d97706;
+      --gray-50: #fafafa; --gray-100: #f4f4f5; --gray-200: #e4e4e7; --gray-300: #d4d4d8; --gray-400: #a1a1aa; --gray-500: #71717a; --gray-600: #52525b; --gray-700: #3f3f46; --gray-800: #27272a; --gray-900: #18181b;
+      --font-sans: 'Inter', system-ui, sans-serif; --font-serif: 'DM Serif Display', serif;
+      --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem; --space-6: 1.5rem; --space-8: 2rem; --space-12: 3rem; --space-16: 4rem; --space-20: 5rem; --space-24: 6rem; --space-32: 8rem;
+      --radius: 0.5rem; --radius-lg: 1rem; --radius-xl: 1.5rem; --radius-2xl: 2rem; --radius-full: 9999px;
+      --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1); --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+      --gradient-primary: linear-gradient(135deg, var(--primary-500) 0%, var(--primary-700) 100%); --gradient-hero: linear-gradient(135deg, var(--primary-600) 0%, var(--accent-600) 50%, var(--primary-700) 100%);
+      --bg-gradient: radial-gradient(circle at 20% 80%, rgba(14, 165, 233, 0.15) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(217, 70, 239, 0.15) 0%, transparent 50%), linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
+      --blur: blur(8px); --transition: 0.2s ease-out; --transition-slow: 0.3s ease-out;
+    }
+    
+    *, *::before, *::after { box-sizing: border-box; }
+    * { margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+    body { font-family: var(--font-sans); line-height: 1.6; color: var(--gray-700); background: var(--bg-gradient); min-height: 100vh; -webkit-font-smoothing: antialiased; }
+    img, picture, video, canvas, svg { display: block; max-width: 100%; }
+    input, button, textarea, select { font: inherit; }
+    
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 var(--space-6); }
+    .grid { display: grid; gap: var(--space-6); }
+    .grid-2 { grid-template-columns: repeat(2, 1fr); }
+    .grid-3 { grid-template-columns: repeat(3, 1fr); }
+    @media (max-width: 768px) { .grid-2, .grid-3 { grid-template-columns: 1fr; } }
+    
+    .text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+    .text-base { font-size: 1rem; line-height: 1.5rem; }
+    .text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+    .text-xl { font-size: 1.25rem; line-height: 1.75rem; }
+    .text-2xl { font-size: 1.5rem; line-height: 2rem; }
+    .text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
+    .text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
+    .text-5xl { font-size: 3rem; line-height: 1.1; }
+    .font-medium { font-weight: 500; } .font-semibold { font-weight: 600; } .font-bold { font-weight: 700; } .font-extrabold { font-weight: 800; }
+    .text-center { text-align: center; }
+    
+    .navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 50; background: rgba(255, 255, 255, 0.8); backdrop-filter: var(--blur); border-bottom: 1px solid var(--gray-200); transition: var(--transition); }
+    .navbar.scrolled { background: rgba(255, 255, 255, 0.95); box-shadow: var(--shadow-lg); }
+    .nav-container { display: flex; align-items: center; justify-content: space-between; height: 5rem; }
+    .logo { display: flex; align-items: center; gap: var(--space-3); font-weight: 700; font-size: var(--text-xl); color: var(--gray-900); text-decoration: none; }
+    .logo-icon { width: 2.5rem; height: 2.5rem; background: var(--gradient-hero); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; color: white; font-weight: 800; font-size: 1.125rem; box-shadow: var(--shadow-lg); }
+    .nav-links { display: flex; list-style: none; gap: var(--space-8); align-items: center; }
+    .nav-link { position: relative; color: var(--gray-700); text-decoration: none; font-weight: 500; padding: var(--space-2) 0; transition: var(--transition); }
+    .nav-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px; background: var(--gradient-primary); transition: var(--transition); }
+    .nav-link:hover::after, .nav-link.active::after { width: 100%; }
+    .nav-link:hover { color: var(--primary-600); }
+    .lang-switch { display: flex; gap: var(--space-2); align-items: center; }
+    .lang-btn { padding: var(--space-1) var(--space-3); border: 1px solid var(--gray-300); background: white; border-radius: var(--radius); font-weight: 500; cursor: pointer; transition: var(--transition); }
+    .lang-btn.active { background: var(--gradient-primary); color: white; border-color: var(--primary-600); }
+    
+    .mobile-menu-btn { display: none; flex-direction: column; gap: 4px; background: none; border: none; cursor: pointer; padding: var(--space-2); }
+    .mobile-menu-btn span { width: 24px; height: 2px; background: var(--gray-700); border-radius: 2px; transition: var(--transition); }
+    @media (max-width: 768px) {
+      .nav-links { position: fixed; top: 5rem; left: -100%; width: 100%; height: calc(100vh - 5rem); background: rgba(255, 255, 255, 0.95); backdrop-filter: var(--blur); flex-direction: column; justify-content: flex-start; padding: var(--space-8); transition: var(--transition-slow); }
+      .nav-links.active { left: 0; }
+      .mobile-menu-btn { display: flex; }
+    }
+    
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2); padding: var(--space-3) var(--space-6); border-radius: var(--radius-full); font-weight: 600; text-decoration: none; border: none; cursor: pointer; transition: var(--transition); position: relative; overflow: hidden; }
+    .btn::before { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent); transition: var(--transition-slow); }
+    .btn:hover::before { left: 100%; }
+    .btn-primary { background: var(--gradient-primary); color: white; box-shadow: var(--shadow-lg); }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: var(--shadow-xl); }
+    .btn-secondary { background: white; color: var(--primary-600); border: 2px solid var(--primary-200); box-shadow: var(--shadow); }
+    .btn-secondary:hover { background: var(--primary-50); border-color: var(--primary-300); }
+    
+    .section { padding: var(--space-20) 0; position: relative; }
+    .section-header { text-align: center; margin-bottom: var(--space-16); }
+    .section-title { font-family: var(--font-serif); font-size: clamp(2rem, 4vw, 3rem); color: var(--gray-900); margin-bottom: var(--space-4); font-style: italic; }
+    .section-subtitle { font-size: var(--text-xl); color: var(--gray-600); max-width: 600px; margin: 0 auto; }
+    
+    .card { background: white; border-radius: var(--radius-2xl); padding: var(--space-8); box-shadow: var(--shadow); border: 1px solid var(--gray-200); transition: var(--transition-slow); }
+    .card:hover { transform: translateY(-4px); box-shadow: var(--shadow-xl); }
+    .card h3 { font-size: var(--text-xl); font-weight: 700; color: var(--gray-900); margin-bottom: var(--space-3); }
+    .card p { color: var(--gray-600); margin-bottom: var(--space-4); line-height: 1.7; }
+    
+    .hero { min-height: 80vh; display: flex; align-items: center; position: relative; overflow: hidden; padding: var(--space-32) 0 var(--space-20); }
+    .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at 70% 30%, rgba(14, 165, 233, 0.1) 0%, transparent 60%), radial-gradient(circle at 30% 70%, rgba(217, 70, 239, 0.1) 0%, transparent 60%); z-index: -1; }
+    .hero-content { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-16); align-items: center; }
+    @media (max-width: 1024px) { .hero-content { grid-template-columns: 1fr; gap: var(--space-12); text-align: center; } }
+    .hero-text h1 { font-family: var(--font-serif); font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.1; color: var(--gray-900); margin-bottom: var(--space-6); font-style: italic; }
+    .hero-highlight { background: var(--gradient-hero); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; display: inline-block; }
+    .hero-subtitle { font-size: var(--text-xl); color: var(--gray-600); margin-bottom: var(--space-8); max-width: 600px; }
+    
+    .timeline { position: relative; padding-left: var(--space-8); }
+    .timeline::before { content: ''; position: absolute; left: 2rem; top: 0; bottom: 0; width: 2px; background: var(--gradient-primary); }
+    .timeline-item { position: relative; margin-bottom: var(--space-12); background: white; border-radius: var(--radius-2xl); padding: var(--space-8); box-shadow: var(--shadow); border: 1px solid var(--gray-200); margin-left: var(--space-8); }
+    .timeline-item::before { content: ''; position: absolute; left: -3rem; top: 2rem; width: 1rem; height: 1rem; background: var(--gradient-primary); border-radius: var(--radius-full); border: 3px solid white; box-shadow: var(--shadow); }
+    .timeline-date { display: inline-block; padding: var(--space-1) var(--space-3); background: var(--primary-100); color: var(--primary-700); border-radius: var(--radius-full); font-size: var(--text-sm); font-weight: 600; margin-bottom: var(--space-3); }
+    .timeline-title { font-size: var(--text-xl); font-weight: 700; color: var(--gray-900); margin-bottom: var(--space-3); }
+    .timeline-description { color: var(--gray-600); line-height: 1.7; }
+    
+    .footer { background: var(--gray-900); border-top: 1px solid var(--gray-800); padding: var(--space-12) 0 var(--space-8); }
+    .footer-content { display: grid; grid-template-columns: 1fr auto; gap: var(--space-8); align-items: center; }
+    .footer-text { color: var(--gray-400); }
+    .footer-links { display: flex; gap: var(--space-6); list-style: none; }
+    .footer-links a { color: var(--gray-400); text-decoration: none; transition: var(--transition); }
+    .footer-links a:hover { color: var(--primary-400); }
+    
+    .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    
+    body.lang-fr .lang-fr { display: block; } body.lang-fr .lang-en { display: none; }
+    body.lang-en .lang-fr { display: none; } body.lang-en .lang-en { display: block; }
+    
+    .progress-bar { position: fixed; top: 0; left: 0; width: 0%; height: 3px; background: var(--gradient-primary); z-index: 100; transition: width 0.1s ease-out; }
+    
+    .scroll-top { position: fixed; bottom: var(--space-8); right: var(--space-8); width: 56px; height: 56px; background: var(--gradient-primary); border: none; border-radius: var(--radius-full); color: white; font-size: 1.25rem; cursor: pointer; box-shadow: var(--shadow-lg); opacity: 0; visibility: hidden; transform: translateY(20px); transition: var(--transition-slow); z-index: 40; }
+    .scroll-top.visible { opacity: 1; visibility: visible; transform: translateY(0); }
+    .scroll-top:hover { transform: translateY(-4px); box-shadow: var(--shadow-xl); }
+    
+    @media (max-width: 768px) {
+      .container { padding: 0 var(--space-4); }
+      .hero { padding: var(--space-24) 0 var(--space-16); min-height: auto; }
+      .section { padding: var(--space-16) 0; }
+      .section-header { margin-bottom: var(--space-12); }
+      .timeline { padding-left: var(--space-4); }
+      .timeline-item { margin-left: var(--space-4); }
+      .timeline-item::before { left: -1.5rem; }
+      .footer-content { grid-template-columns: 1fr; text-align: center; gap: var(--space-4); }
+      .footer-links { justify-content: center; }
+    }
+    
+    *:focus-visible { outline: 2px solid var(--primary-500); outline-offset: 2px; }
+    .btn:focus-visible { outline-color: white; }
+    
+    /* Styles spécifiques à la page Experience */
+    .experience-card {
+      position: relative;
+      background: white;
+      border-radius: var(--radius-2xl);
+      padding: var(--space-8);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--gray-200);
+      transition: var(--transition-slow);
+      margin-bottom: var(--space-8);
+    }
+    
+    .experience-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--gradient-primary);
+      border-radius: var(--radius-2xl) var(--radius-2xl) 0 0;
+    }
+    
+    .experience-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-xl);
+    }
+    
+    .company-logo {
+      width: 80px;
+      height: 80px;
+      background: var(--gradient-primary);
+      border-radius: var(--radius-xl);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 800;
+      font-size: 1.5rem;
+      margin-bottom: var(--space-6);
+    }
+    
+    .role-title {
+      font-size: var(--text-2xl);
+      font-weight: 700;
+      color: var(--gray-900);
+      margin-bottom: var(--space-2);
+    }
+    
+    .company-name {
+      font-size: var(--text-lg);
+      color: var(--primary-600);
+      font-weight: 600;
+      margin-bottom: var(--space-2);
+    }
+    
+    .duration {
+      display: inline-block;
+      padding: var(--space-1) var(--space-3);
+      background: var(--gray-100);
+      color: var(--gray-600);
+      border-radius: var(--radius-full);
+      font-size: var(--text-sm);
+      font-weight: 500;
+      margin-bottom: var(--space-6);
+    }
+    
+    .role-description {
+      color: var(--gray-600);
+      line-height: 1.7;
+      margin-bottom: var(--space-6);
+    }
+    
+    .achievements-list {
+      list-style: none;
+      margin-bottom: var(--space-6);
+    }
+    
+    .achievements-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-3);
+      margin-bottom: var(--space-3);
+      color: var(--gray-700);
+    }
+    
+    .achievements-list li::before {
+      content: '★';
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      background: var(--warning-100);
+      color: var(--warning-600);
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 12px;
+      margin-top: 2px;
+    }
+    
+    .skills-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+    }
+    
+    .skill-tag {
+      padding: var(--space-1) var(--space-3);
+      background: var(--primary-50);
+      color: var(--primary-700);
+      border-radius: var(--radius-full);
+      font-size: var(--text-sm);
+      font-weight: 500;
+    }
+    
+    .clients-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: var(--space-4);
+      margin-top: var(--space-6);
+    }
+    
+    .client-card {
+      background: var(--gray-50);
+      border-radius: var(--radius-lg);
+      padding: var(--space-4);
+      text-align: center;
+      border: 1px solid var(--gray-200);
+    }
+    
+    .client-logo {
+      width: 60px;
+      height: 60px;
+      background: var(--gradient-primary);
+      border-radius: var(--radius-lg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto var(--space-3);
+      color: white;
+      font-weight: 700;
+      font-size: 1.25rem;
+    }
+    
+    .client-name {
+      font-weight: 600;
+      color: var(--gray-900);
+      margin-bottom: var(--space-1);
+    }
+    
+    .client-type {
+      font-size: var(--text-sm);
+      color: var(--gray-600);
+    }
+  </style>
+</head>
+<body class="lang-fr">
+  <!-- Progress bar -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">M</div>
+          <span>Mae Basiratmand</span>
+        </a>
+        
+        <ul class="nav-links">
+          <li><a href="index.html#services" class="nav-link">
+            <span class="lang-fr">Services</span>
+            <span class="lang-en">Services</span>
+          </a></li>
+          <li><a href="index.html#case-studies" class="nav-link">
+            <span class="lang-fr">Cas clients</span>
+            <span class="lang-en">Case Studies</span>
+          </a></li>
+          <li><a href="index.html#teaching" class="nav-link">
+            <span class="lang-fr">Enseignement</span>
+            <span class="lang-en">Teaching</span>
+          </a></li>
+          <li><a href="about.html" class="nav-link">
+            <span class="lang-fr">À propos</span>
+            <span class="lang-en">About</span>
+          </a></li>
+          <li><a href="experience.html" class="nav-link active">
+            <span class="lang-fr">Expérience</span>
+            <span class="lang-en">Experience</span>
+          </a></li>
+          <li><a href="achievements.html" class="nav-link">
+            <span class="lang-fr">Réalisations</span>
+            <span class="lang-en">Achievements</span>
+          </a></li>
+          <li><a href="index.html#contact" class="nav-link">
+            <span class="lang-fr">Contact</span>
+            <span class="lang-en">Contact</span>
+          </a></li>
+          <li class="lang-switch">
+            <button class="lang-btn active" data-lang="fr">FR</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+          </li>
+        </ul>
+        
+        <button class="mobile-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>
+            <span class="lang-fr">Un parcours riche entre <span class="hero-highlight">éducation</span> & <span class="hero-highlight">publicité</span></span>
+            <span class="lang-en">A career rich in <span class="hero-highlight">education</span> & <span class="hero-highlight">advertising</span></span>
+          </h1>
+          <p class="hero-subtitle">
+            <span class="lang-fr">Des agences new-yorkaises à l'Executive Education de la FAU en passant par ISCOM Paris : découvrez comment Mae allie la stratégie marketing, la formation et ses racines cliniques.</span>
+            <span class="lang-en">From New York agencies to FAU Executive Education and ISCOM Paris: discover how Mae blends marketing strategy, teaching and her clinical roots.</span>
+          </p>
+        </div>
+        
+        <div class="grid grid-2">
+          <div class="card fade-in">
+            <h3>
+              <span class="lang-fr">FAU & enseignement</span>
+              <span class="lang-en">FAU & teaching</span>
+            </h3>
+            <ul style="list-style: none; padding: 0;">
+              <li style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
+                <span style="display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; background: var(--success-100); color: var(--success-600); border-radius: 50%; font-weight: 700; font-size: 12px;">✓</span>
+                <span class="lang-fr">Marketing manager & professeure adjointe</span>
+                <span class="lang-en">Marketing manager & adjunct professor</span>
+              </li>
+              <li style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
+                <span style="display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; background: var(--success-100); color: var(--success-600); border-radius: 50%; font-weight: 700; font-size: 12px;">✓</span>
+                <span class="lang-fr">Stratégies multi-canaux: web, paid, comm.</span>
+                <span class="lang-en">Cross-channel strategies: web, paid, comms.</span>
+              </li>
+              <li style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
+                <span style="display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; background: var(--success-100); color: var(--success-600); border-radius: 50%; font-weight: 700; font-size: 12px;">✓</span>
+                <span class="lang-fr">Cours de marketing digital & social media</span>
+                <span class="lang-en">Digital marketing & social media courses</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="card fade-in">
+            <h3>
+              <span class="lang-fr">Agences & industrie</span>
+              <span class="lang-en">Agencies & industry</span>
+            </h3>
+            <ul style="list-style: none; padding: 0;">
+              <li style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
+                <span style="display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; background: var(--success-100); color: var(--success-600); border-radius: 50%; font-weight: 700; font-size: 12px;">✓</span>
+                DigitasLBi & FCB Health
+              </li>
+              <li style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
+                <span style="display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; background: var(--success-100); color: var(--success-600); border-radius: 50%; font-weight: 700; font-size: 12px;">✓</span>
+                <span class="lang-fr">Clients pharma & campagnes primées</span>
+                <span class="lang-en">Pharma clients & award-winning campaigns</span>
+              </li>
+              <li style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
+                <span style="display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; background: var(--success-100); color: var(--success-600); border-radius: 50%; font-weight: 700; font-size: 12px;">✓</span>
+                Hearst Magazines & médias
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Current Position -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="lang-fr">Positions actuelles</span>
+          <span class="lang-en">Current positions</span>
+        </h2>
+        <p class="section-subtitle">
+          <span class="lang-fr">Leadership marketing et enseignement international entre la Floride et Paris</span>
+          <span class="lang-en">Marketing leadership and international teaching between Florida and Paris</span>
+        </p>
+      </div>
+      
+      <div class="grid grid-2">
+        <div class="experience-card fade-in">
+          <div class="company-logo">FAU</div>
+          <h3 class="role-title">
+            <span class="lang-fr">Marketing Manager & Professeure Adjointe</span>
+            <span class="lang-en">Marketing Manager & Adjunct Professor</span>
+          </h3>
+          <div class="company-name">Florida Atlantic University</div>
+          <div class="duration">
+            <span class="lang-fr">2016 — présent</span>
+            <span class="lang-en">2016 — present</span>
+          </div>
+          
+          <p class="role-description">
+            <span class="lang-fr">Direction des stratégies marketing multi-canaux pour l'Executive Education et le College of Business. Conception et animation de cours avancés en marketing digital pour étudiants MBA, Executive MHA et programmes de formation continue.</span>
+            <span class="lang-en">Leading multi-channel marketing strategies for Executive Education and College of Business. Design and delivery of advanced digital marketing courses for MBA students, Executive MHA and continuing education programs.</span>
+          </p>
+          
+          <ul class="achievements-list">
+            <li>
+              <span class="lang-fr">Elaboration de stratégies marketing multicanaux (web, paid media, corporate communications, événements)</span>
+              <span class="lang-en">Development of multi-channel marketing strategies (web, paid media, corporate communications, events)</span>
+            </li>
+            <li>
+              <span class="lang-fr">Enseignement marketing digital & social media aux étudiants undergraduate et graduate</span>
+              <span class="lang-en">Teaching digital marketing & social media to undergraduate and graduate students</span>
+            </li>
+            <li>
+              <span class="lang-fr">Interventions régulières dans les programmes MBA et Executive Master of Health Administration</span>
+              <span class="lang-en">Regular guest lectures in MBA and Executive Master of Health Administration programs</span>
+            </li>
+            <li>
+              <span class="lang-fr">Animation de workshops et webinaires pour Executive Education</span>
+              <span class="lang-en">Leading workshops and webinars for Executive Education</span>
+            </li>
+          </ul>
+          
+          <div class="skills-tags">
+            <span class="skill-tag">Executive Education</span>
+            <span class="skill-tag">MBA Teaching</span>
+            <span class="skill-tag">Healthcare Marketing</span>
+            <span class="skill-tag">Digital Strategy</span>
+            <span class="skill-tag">Corporate Communications</span>
+          </div>
+        </div>
+        
+        <div class="experience-card fade-in">
+          <div class="company-logo">ISC</div>
+          <h3 class="role-title">
+            <span class="lang-fr">Enseignante</span>
+            <span class="lang-en">Instructor</span>
+          </h3>
+          <div class="company-name">ISCOM Paris</div>
+          <div class="duration">
+            <span class="lang-fr">Février 2025 — présent</span>
+            <span class="lang-en">February 2025 — present</span>
+          </div>
+          
+          <p class="role-description">
+            <span class="lang-fr">Formation d'étudiants internationaux en création de contenu et communication d'entreprise. Transmission d'expertise en marketing digital dans un contexte multiculturel franco-américain.</span>
+            <span class="lang-en">Training international students in content creation and corporate communication. Sharing digital marketing expertise in a French-American multicultural context.</span>
+          </p>
+          
+          <ul class="achievements-list">
+            <li>
+              <span class="lang-fr">Création de contenu & storytelling international</span>
+              <span class="lang-en">International content creation & storytelling</span>
+            </li>
+            <li>
+              <span class="lang-fr">Communication d'entreprise cross-culturelle</span>
+              <span class="lang-en">Cross-cultural corporate communication</span>
+            </li>
+            <li>
+              <span class="lang-fr">Marketing digital dans un contexte européen</span>
+              <span class="lang-en">Digital marketing in European context</span>
+            </li>
+            <li>
+              <span class="lang-fr">Mentorat d'étudiants sur projets internationaux</span>
+              <span class="lang-en">Student mentoring on international projects</span>
+            </li>
+          </ul>
+          
+          <div class="skills-tags">
+            <span class="skill-tag">Content Creation</span>
+            <span class="skill-tag">International Marketing</span>
+            <span class="skill-tag">Cross-cultural Communication</span>
+            <span class="skill-tag">Brand Strategy</span>
+            <span class="skill-tag">Student Mentoring</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Career Timeline -->
+  <section class="section" style="background: linear-gradient(135deg, var(--primary-50) 0%, var(--accent-50) 100%);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="lang-fr">Parcours professionnel détaillé</span>
+          <span class="lang-en">Detailed professional journey</span>
+        </h2>
+        <p class="section-subtitle">
+          <span class="lang-fr">De l'hôpital aux plus grandes agences publicitaires, jusqu'à l'enseignement international</span>
+          <span class="lang-en">From hospital to major advertising agencies, to international teaching</span>
+        </p>
+      </div>
+      
+      <div class="timeline">
+        <div class="timeline-item fade-in">
+          <div class="timeline-date">2012</div>
+          <h3 class="timeline-title">
+            <span class="lang-fr">Infirmière Diplômée - Secteur Hospitalier</span>
+            <span class="lang-en">Registered Nurse - Hospital Sector</span>
+          </h3>
+          <p class="timeline-description">
+            <span class="lang-fr">Début de carrière comme infirmière diplômée (RN) avec spécialisation en santé mentale. Acquisition d'une expertise clinique en patient care, compréhension des protocoles médicaux et sensibilisation aux enjeux éthiques du secteur de la santé. Cette expérience foundationnelle forge sa compréhension unique des besoins patients et des contraintes réglementaires.</span>
+            <span class="lang-en">Career start as a registered nurse (RN) with mental health specialization. Acquired clinical expertise in patient care, understanding of medical protocols and awareness of healthcare ethics. This foundational experience shaped her unique understanding of patient needs and regulatory constraints.</span>
+          </p>
+        </div>
+        
+        <div class="timeline-item fade-in">
+          <div class="timeline-date">2013—2016</div>
+          <h3 class="timeline-title">
+            <span class="lang-fr">Account Manager & Strategist - DigitasLBi New York</span>
+            <span class="lang-en">Account Manager & Strategist - DigitasLBi New York</span>
+          </h3>
+          <p class="timeline-description">
+            <span class="lang-fr">Transition vers le marketing digital dans l'une des agences les plus prestigieuses de New York. Gestion de comptes pharmaceutiques majeurs incluant AstraZeneca, Actavis et Forest Laboratories. Développement de campagnes intégrées alliant créativité et conformité réglementaire. Collaboration étroite avec les équipes médicales pour créer des messages authentiques et impactants.</span>
+            <span class="lang-en">Transition to digital marketing at one of New York's most prestigious agencies. Management of major pharmaceutical accounts including AstraZeneca, Actavis and Forest Laboratories. Development of integrated campaigns combining creativity with regulatory compliance. Close collaboration with medical teams to create authentic and impactful messaging.</span>
+          </p>
+        </div>
+        
+        <div class="timeline-item fade-in">
+          <div class="timeline-date">2014—2016</div>
+          <h3 class="timeline-title">
+            <span class="lang-fr">Senior Account Manager - FCB Health New York</span>
+            <span class="lang-en">Senior Account Manager - FCB Health New York</span>
+          </h3>
+          <p class="timeline-description">
+            <span class="lang-fr">Promotion dans l'une des agences santé les plus respectées au monde. Leadership sur des campagnes de sensibilisation aux maladies pour Pfizer et Galderma. Actrice clé d'une campagne revolutionary pour AstraZeneca qui remportera le Grand Prix et un Lion d'argent aux Cannes Lions Pharma - une première historique pour cette marque. Parallèlement, expansion vers les médias lifestyle avec Hearst Magazines (Cosmopolitan, O Magazine, Esquire, Seventeen).</span>
+            <span class="lang-en">Promotion to one of the world's most respected health agencies. Leadership on disease awareness campaigns for Pfizer and Galderma. Key player in a revolutionary campaign for AstraZeneca that won the Grand Prix and Silver Lion at Cannes Lions Pharma - a historic first for this brand. Simultaneously, expansion into lifestyle media with Hearst Magazines (Cosmopolitan, O Magazine, Esquire, Seventeen).</span>
+          </p>
+        </div>
+        
+        <div class="timeline-item fade-in">
+          <div class="timeline-date">2016—présent</div>
+          <h3 class="timeline-title">
+            <span class="lang-fr">Marketing Manager & Professeure Adjointe - Florida Atlantic University</span>
+            <span class="lang-en">Marketing Manager & Adjunct Professor - Florida Atlantic University</span>
+          </h3>
+          <p class="timeline-description">
+            <span class="lang-fr">Transition vers l'éducation supérieure avec un double rôle unique : direction des stratégies marketing pour l'Executive Education et le College of Business, tout en enseignant aux futurs leaders. Développement de programmes innovants alliant théorie académique et expertise pratique. Animation de cours de marketing digital et médias sociaux pour étudiants undergraduate, MBA et Executive MHA. Organisation de workshops pour professionnels et interventions dans des conférences internationales.</span>
+            <span class="lang-en">Transition to higher education with a unique dual role: leading marketing strategies for Executive Education and College of Business, while teaching future leaders. Development of innovative programs combining academic theory with practical expertise. Teaching digital marketing and social media courses for undergraduate, MBA and Executive MHA students. Organizing professional workshops and speaking at international conferences.</span>
+          </p>
+        </div>
+        
+        <div class="timeline-item fade-in">
+          <div class="timeline-date">2025—présent</div>
+          <h3 class="timeline-title">
+            <span class="lang-fr">Enseignante - ISCOM Paris</span>
+            <span class="lang-en">Instructor - ISCOM Paris</span>
+          </h3>
+          <p class="timeline-description">
+            <span class="lang-fr">Expansion internationale avec un poste d'enseignante à l'ISCOM Paris, école de communication de référence en France. Formation d'étudiants en création de contenu et communication d'entreprise, apportant une perspective américaine unique sur les best practices internationales. Développement de cours sur le marketing digital cross-culturel et mentoring d'étudiants sur des projets internationaux. Cette position transcontinentale enrichit sa vision globale du marketing et renforce son expertise en communication interculturelle.</span>
+            <span class="lang-en">International expansion with an instructor position at ISCOM Paris, France's leading communication school. Training students in content creation and corporate communication, bringing a unique American perspective on international best practices. Developing courses on cross-cultural digital marketing and mentoring students on international projects. This transcontinental position enriches her global marketing vision and strengthens her expertise in intercultural communication.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Clients & Projects -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="lang-fr">Clients & projets marquants</span>
+          <span class="lang-en">Key clients & projects</span>
+        </h2>
+        <p class="section-subtitle">
+          <span class="lang-fr">Portfolio diversifié allant du Fortune 500 aux startups innovantes</span>
+          <span class="lang-en">Diverse portfolio ranging from Fortune 500 to innovative startups</span>
+        </p>
+      </div>
+      
+      <div class="grid grid-3">
+        <div class="card fade-in">
+          <h3>
+            <span class="lang-fr">Secteur Pharmaceutique</span>
+            <span class="lang-en">Pharmaceutical Sector</span>
+          </h3>
+          <div class="clients-grid">
+            <div class="client-card">
+              <div class="client-logo">AZ</div>
+              <div class="client-name">AstraZeneca</div>
+              <div class="client-type">
+                <span class="lang-fr">Pharma Global</span>
+                <span class="lang-en">Global Pharma</span>
+              </div>
+            </div>
+            <div class="client-card">
+              <div class="client-logo">PF</div>
+              <div class="client-name">Pfizer</div>
+              <div class="client-type">
+                <span class="lang-fr">Pharma Global</span>
+                <span class="lang-en">Global Pharma</span>
+              </div>
+            </div>
+            <div class="client-card">
+              <div class="client-logo">AC</div>
+              <div class="client-name">Actavis</div>
+              <div class="client-type">
+                <span class="lang-fr">Générique</span>
+                <span class="lang-en">Generic</span>
+              </div>
+            </div>
+            <div class="client-card">
+              <div class="client-logo">FL</div>
+              <div class="client-name">Forest Labs</div>
+              <div class="client-type">Pharma</div>
+            </div>
+            <div class="client-card">
+              <div class="client-logo">GA</div>
+              <div class="client-name">Galderma</div>
+              <div class="client-type">Dermatologie</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card fade-in">
+          <h3>
+            <span class="lang-fr">Médias & Publications</span>
+            <span class="lang-en">Media & Publications</span>
+          </h3>
+          <div class="clients-grid">
+            <div class="client-card">
+              <div class="client-logo">HM</div>
+              <div class="client-name">Hearst Magazines</div>
+              <div class="client-type">
+                <span class="lang-fr">Groupe Média</span>
+                <span class="lang-en">Media Group</span>
+              </div>
+            </div>
+            <div class="client-card">
+              <div class="client-logo">CO</div>
+              <div class="client-name">Cosmopolitan</div>
+              <div class="client-type">Magazine</div>
+            </div>
+            <div class="client-card">
+              <div class="client-logo">O</div>
+              <div class="client-name">O Magazine</div>
+              <div class="client-type">Lifestyle</div>
+            </div>
+            <div class="client-card">
+              <div class="client-logo">EQ</div>
+              <div class="client-name">Esquire</div>
+              <div class="client-type">Magazine</div>
+            </div>
+            <div class="client-card">
+              <div class="client-logo">17</div>
+              <div class="client-name">Seventeen</div>
+              <div class="client-type">Young Adult</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card fade-in">
+          <h3>
+            <span class="lang-fr">Éducation & Institutions</span>
+            <span class="lang-en">Education & Institutions</span>
+          </h3>
+          <div class="clients-grid">
+            <div class="client-card">
+              <div class="client-logo">FAU</div>
+              <div class="client-name">Florida Atlantic University</div>
+              <div class="client-type">
+                <span class="lang-fr">Université Publique</span>
+                <span class="lang-en">Public University</span>
+              </div>
+            </div>
+            <div class="client-card">
+              <div class="client-logo">ISC</div>
+              <div class="client-name">ISCOM Paris</div>
+              <div class="client-type">
+                <span class="lang-fr">École Privée</span>
+                <span class="lang-en">Private School</span>
+              </div>
+            </div>
+            <div class="client-card">
+              <div class="client-logo">+</div>
+              <div class="client-name">
+                <span class="lang-fr">Cabinets Médicaux</span>
+                <span class="lang-en">Medical Practices</span>
+              </div>
+              <div class="client-type">
+                <span class="lang-fr">Consulting Privé</span>
+                <span class="lang-en">Private Consulting</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills & Expertise -->
+  <section class="section" style="background: var(--gray-50);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="lang-fr">Compétences techniques & leadership</span>
+          <span class="lang-en">Technical skills & leadership</span>
+        </h2>
+        <p class="section-subtitle">
+          <span class="lang-fr">Expertise développée à travers 10+ années d'expérience clinique et marketing</span>
+          <span class="lang-en">Expertise developed through 10+ years of clinical and marketing experience</span>
+        </p>
+      </div>
+      
+      <div class="grid grid-3">
+        <div class="card fade-in">
+          <h3>
+            <span class="lang-fr">Marketing Digital</span>
+            <span class="lang-en">Digital Marketing</span>
+          </h3>
+          <div class="skills-tags" style="margin-top: 1rem;">
+            <span class="skill-tag">SEO/SEA</span>
+            <span class="skill-tag">Social Media</span>
+            <span class="skill-tag">Content Marketing</span>
+            <span class="skill-tag">Email Marketing</span>
+            <span class="skill-tag">Marketing Automation</span>
+            <span class="skill-tag">Analytics & KPIs</span>
+            <span class="skill-tag">A/B Testing</span>
+            <span class="skill-tag">CRM Strategy</span>
+            <span class="skill-tag">Lead Generation</span>
+            <span class="skill-tag">ABM</span>
+          </div>
+        </div>
+        
+        <div class="card fade-in">
+          <h3>
+            <span class="lang-fr">Secteur Médical</span>
+            <span class="lang-en">Healthcare Sector</span>
+          </h3>
+          <div class="skills-tags" style="margin-top: 1rem;">
+            <span class="skill-tag">HIPAA Compliance</span>
+            <span class="skill-tag">Clinical Expertise</span>
+            <span class="skill-tag">Patient Journey</span>
+            <span class="skill-tag">Medical Writing</span>
+            <span class="skill-tag">Pharma Marketing</span>
+            <span class="skill-tag">Healthcare Ethics</span>
+            <span class="skill-tag">Regulatory Affairs</span>
+            <span class="skill-tag">Med-tech GTM</span>
+            <span class="skill-tag">Mental Health</span>
+            <span class="skill-tag">Patient Care</span>
+          </div>
+        </div>
+        
+        <div class="card fade-in">
+          <h3>
+            <span class="lang-fr">Leadership & Formation</span>
+            <span class="lang-en">Leadership & Training</span>
+          </h3>
+          <div class="skills-tags" style="margin-top: 1rem;">
+            <span class="skill-tag">Team Management</span>
+            <span class="skill-tag">Strategic Planning</span>
+            <span class="skill-tag">Program Design</span>
+            <span class="skill-tag">Public Speaking</span>
+            <span class="skill-tag">Workshop Facilitation</span>
+            <span class="skill-tag">Curriculum Development</span>
+            <span class="skill-tag">Student Mentoring</span>
+            <span class="skill-tag">Cross-cultural Communication</span>
+            <span class="skill-tag">Change Management</span>
+            <span class="skill-tag">Crisis Communications</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section" style="background: linear-gradient(135deg, var(--gray-900) 0%, var(--primary-900) 100%); color: white;">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" style="color: white;">
+          <span class="lang-fr">Intéressé par mon expertise ?</span>
+          <span class="lang-en">Interested in my expertise?</span>
+        </h2>
+        <p class="section-subtitle" style="color: rgba(255,255,255,0.8);">
+          <span class="lang-fr">Découvrez comment mon expérience unique peut transformer votre marketing médical</span>
+          <span class="lang-en">Discover how my unique experience can transform your medical marketing</span>
+        </p>
+      </div>
+      
+      <div style="text-align: center;">
+        <a href="index.html#contact" class="btn btn-primary" style="margin-right: 1rem;">
+          <span class="lang-fr">Discuter d'un projet</span>
+          <span class="lang-en">Discuss a project</span>
+        </a>
+        <a href="achievements.html" class="btn btn-secondary">
+          <span class="lang-fr">Voir mes réalisations</span>
+          <span class="lang-en">See my achievements</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-text">
+          <span class="lang-fr">© 2025 Mae Basiratmand Consulting. Tous droits réservés.</span>
+          <span class="lang-en">© 2025 Mae Basiratmand Consulting. All rights reserved.</span>
+        </div>
+        <ul class="footer-links">
+          <li><a href="index.html">
+            <span class="lang-fr">Accueil</span>
+            <span class="lang-en">Home</span>
+          </a></li>
+          <li><a href="about.html">
+            <span class="lang-fr">À propos</span>
+            <span class="lang-en">About</span>
+          </a></li>
+          <li><a href="achievements.html">
+            <span class="lang-fr">Réalisations</span>
+            <span class="lang-en">Achievements</span>
+          </a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top button -->
+  <button class="scroll-top" id="scrollTop">↑</button>
+
+  <script>
+    // Same JavaScript as other pages - Language switching, navigation, etc.
+    const langButtons = document.querySelectorAll('.lang-btn');
+    const body = document.body;
+
+    function setLanguage(lang) {
+      body.className = body.className.replace(/lang-\w+/, `lang-${lang}`);
+      langButtons.forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.lang === lang);
+      });
+      localStorage.setItem('language', lang);
+    }
+
+    langButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        setLanguage(btn.dataset.lang);
+      });
+    });
+
+    const savedLang = localStorage.getItem('language') || 'fr';
+    setLanguage(savedLang);
+
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 100) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    const progressBar = document.getElementById('progressBar');
+    window.addEventListener('scroll', () => {
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      progressBar.style.width = scrolled + '%';
+    });
+
+    const scrollTopBtn = document.getElementById('scrollTop');
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        scrollTopBtn.classList.add('visible');
+      } else {
+        scrollTopBtn.classList.remove('visible');
+      }
+    });
+
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    document.querySelectorAll('.fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (mobileMenuBtn) {
+      mobileMenuBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        mobileMenuBtn.classList.toggle('active');
+      });
+
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('active');
+          mobileMenuBtn.classList.remove('active');
+        });
+      });
+    }
+  </script>
+</body>
+</html>
