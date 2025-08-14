@@ -1,0 +1,257 @@
+/* ===================================
+   CRITICAL.CSS - Styles Above-the-Fold
+   À inliner dans le <head> pour performance
+   =================================== */
+
+/* Variables essentielles seulement */
+:root {
+  --primary-600: #0284c7;
+  --primary-700: #0369a1;
+  --accent-600: #c026d3;
+  --gray-50: #fafafa;
+  --gray-200: #e4e4e7;
+  --gray-700: #3f3f46;
+  --gray-900: #18181b;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-serif: 'DM Serif Display', serif;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-32: 8rem;
+  --radius-full: 9999px;
+  --radius-2xl: 2rem;
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --gradient-hero: linear-gradient(135deg, var(--primary-600) 0%, var(--accent-600) 50%, var(--primary-700) 100%);
+  --gradient-primary: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-700) 100%);
+  --transition: 0.2s ease-out;
+}
+
+/* Reset critique */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  color: var(--gray-700);
+  background: linear-gradient(180deg, #ffffff 0%, var(--gray-50) 100%);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Navigation critique */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--gray-200);
+  transition: var(--transition);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--gray-900);
+  text-decoration: none;
+}
+
+.logo-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: var(--gradient-hero);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 800;
+  font-size: 1.125rem;
+  box-shadow: var(--shadow-lg);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+/* NOUVEAU : Bouton menu mobile (caché par défaut sur desktop) */
+.mobile-menu-btn {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-2);
+}
+
+.mobile-menu-btn span {
+  width: 24px;
+  height: 2px;
+  background: var(--gray-700);
+  border-radius: 2px;
+}
+
+
+/* Hero critique */
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: var(--space-32) 0 var(--space-16);
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 70% 30%, rgba(14, 165, 233, 0.1) 0%, transparent 60%),
+    radial-gradient(circle at 30% 70%, rgba(217, 70, 239, 0.1) 0%, transparent 60%);
+  z-index: -1;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-16);
+  align-items: center;
+}
+
+.hero-text h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.1;
+  color: var(--gray-900);
+  margin-bottom: var(--space-6);
+  font-style: italic;
+}
+
+.hero-highlight {
+  background: var(--gradient-hero);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--gray-600);
+  margin-bottom: var(--space-8);
+}
+
+.hero-cta {
+  display: flex;
+  gap: var(--space-4);
+  align-items: center;
+}
+
+/* NOUVEAU : Styles des boutons essentiels */
+.btn {
+  display: inline-flex;
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+}
+
+.btn-primary {
+  background: var(--gradient-primary);
+  color: white;
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-secondary {
+  background: white;
+  color: var(--primary-600);
+  border: 2px solid var(--gray-200); /* Simplifié de --primary-200 */
+}
+
+/* Progress bar critique */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-700) 100%);
+  z-index: 100;
+  transition: width 0.1s ease-out;
+}
+
+/* Language toggle critique */
+body.lang-fr .lang-fr { display: block; }
+body.lang-fr .lang-en { display: none; }
+body.lang-en .lang-fr { display: none; }
+body.lang-en .lang-en { display: block; }
+
+/* Mobile responsive critique */
+@media (max-width: 1024px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-12);
+    text-align: center;
+  }
+  .hero-cta {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .mobile-menu-btn {
+    display: flex; /* NOUVEAU : Affiche le bouton sur mobile */
+  }
+  .nav-container {
+    padding: 0 1rem;
+  }
+  
+  .hero {
+    padding: 6rem 0 4rem;
+    min-height: auto;
+  }
+  
+  .hero-content {
+    padding: 0 1rem;
+  }
+}

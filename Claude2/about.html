@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="fr" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos • Mae Basiratmand • Parcours & Formation</title>
+  <meta name="description" content="Découvrez le parcours unique de Mae Basiratmand : ex-infirmière BSN/MS, marketing manager FAU, enseignante ISCOM Paris. Expertise clinique pour marketing éthique.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  
+  <!-- AMÉLIORATION SEO : Données Structurées pour Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mae Basiratmand",
+    "url": "https://www.VOTRE_SITE_WEB.com/about.html",
+    "image": "https://www.VOTRE_SITE_WEB.com/images/mae-basiratmand-profile.webp",
+    "jobTitle": "Consultante en Marketing Santé",
+    "description": "Ex-infirmière (BSN/MS) et professeure à FAU et ISCOM Paris, Mae Basiratmand allie expertise clinique et stratégies marketing pour des campagnes éthiques et performantes dans le secteur de la santé.",
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Columbia University"
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Florida"
+      }
+    ],
+    "worksFor": [
+      {
+        "@type": "Organization",
+        "name": "Florida Atlantic University"
+      },
+      {
+        "@type": "Organization",
+        "name": "ISCOM Paris"
+      }
+    ],
+    "knowsAbout": ["Marketing Santé", "Marketing Digital", "Conformité HIPAA", "Stratégie de Marque", "Communication Stratégique"]
+  }
+  </script>
+
+  <!-- Critical CSS inline -->
+  <style>
+    :root {
+      --primary-600: #0284c7; --primary-700: #0369a1; --accent-600: #c026d3;
+      --gray-50: #fafafa; --gray-200: #e4e4e7; --gray-700: #3f3f46; --gray-900: #18181b;
+      --font-sans: 'Inter', system-ui, sans-serif; --font-serif: 'DM Serif Display', serif;
+      --space-2: 0.5rem; --space-3: 0.75rem; --space-6: 1.5rem; --space-8: 2rem; --space-16: 4rem; --space-32: 8rem;
+      --radius-full: 9999px; --radius-2xl: 2rem; --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+      --gradient-hero: linear-gradient(135deg, var(--primary-600) 0%, var(--accent-600) 50%, var(--primary-700) 100%);
+      --transition: 0.2s ease-out;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    * { margin: 0; padding: 0; }
+    body { font-family: var(--font-sans); line-height: 1.6; color: var(--gray-700); background: linear-gradient(180deg, #ffffff 0%, var(--gray-50) 100%); -webkit-font-smoothing: antialiased; }
+    .navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 50; background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(8px); border-bottom: 1px solid var(--gray-200); transition: var(--transition); }
+    .nav-container { max-width: 1200px; margin: 0 auto; padding: 0 var(--space-6); display: flex; align-items: center; justify-content: space-between; height: 5rem; }
+    .logo { display: flex; align-items: center; gap: var(--space-3); font-weight: 700; font-size: 1.25rem; color: var(--gray-900); text-decoration: none; }
+    .logo-icon { width: 2.5rem; height: 2.5rem; background: var(--gradient-hero); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; color: white; font-weight: 800; font-size: 1.125rem; box-shadow: var(--shadow-lg); }
+    .nav-links { display: flex; list-style: none; gap: var(--space-8); align-items: center; }
+    .hero { min-height: 80vh; display: flex; align-items: center; position: relative; overflow: hidden; padding: var(--space-32) 0 var(--space-16); }
+    .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at 70% 30%, rgba(14, 165, 233, 0.1) 0%, transparent 60%), radial-gradient(circle at 30% 70%, rgba(217, 70, 239, 0.1) 0%, transparent 60%); z-index: -1; }
+    .hero-content { max-width: 1200px; margin: 0 auto; padding: 0 var(--space-6); display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-16); align-items: center; }
+    .hero-text h1 { font-family: var(--font-serif); font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.1; color: var(--gray-900); margin-bottom: var(--space-6); font-style: italic; }
+    .hero-highlight { background: var(--gradient-hero); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; display: inline-block; }
+    .progress-bar { position: fixed; top: 0; left: 0; width: 0%; height: 3px; background: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-700) 100%); z-index: 100; transition: width 0.1s ease-out; }
+    body.lang-fr .lang-fr { display: block; } body.lang-fr .lang-en { display: none; }
+    body.lang-en .lang-fr { display: none; } body.lang-en .lang-en { display: block; }
+    @media (max-width: 768px) {
+      .nav-links { display: none; } .nav-container { padding: 0 1rem; }
+      .hero { padding: 6rem 0 4rem; min-height: auto; }
+      .hero-content { padding: 0 1rem; grid-template-columns: 1fr; gap: var(--space-12); text-align: center; }
+    }
+  </style>
+  
+  <!-- CSS externe -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body class="lang-fr" data-page="about">
+  <!-- Progress bar -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">M</div>
+        <span>Mae Basiratmand</span>
+      </a>
+      
+      <!-- AMÉLIORATION ACCESSIBILITÉ : ID ajouté pour aria-controls -->
+      <ul class="nav-links" id="nav-links-mobile">
+        <li><a href="index.html#services" class="nav-link"><span class="lang-fr">Services</span><span class="lang-en">Services</span></a></li>
+        <li><a href="index.html#case-studies" class="nav-link"><span class="lang-fr">Cas clients</span><span class="lang-en">Case Studies</span></a></li>
+        <li><a href="index.html#teaching" class="nav-link"><span class="lang-fr">Enseignement</span><span class="lang-en">Teaching</span></a></li>
+        <li><a href="about.html" class="nav-link active" aria-current="page"><span class="lang-fr">À propos</span><span class="lang-en">About</span></a></li>
+        <li><a href="experience.html" class="nav-link"><span class="lang-fr">Expérience</span><span class="lang-en">Experience</span></a></li>
+        <li><a href="achievements.html" class="nav-link"><span class="lang-fr">Réalisations</span><span class="lang-en">Achievements</span></a></li>
+        <li><a href="faq.html" class="nav-link">FAQ</a></li>
+        <li><a href="contact.html" class="nav-link"><span class="lang-fr">Contact</span><span class="lang-en">Contact</span></a></li>
+        <li class="lang-switch">
+          <button class="lang-btn active" data-lang="fr">FR</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </li>
+      </ul>
+      
+      <!-- AMÉLIORATION ACCESSIBILITÉ : Attributs ARIA ajoutés pour le menu mobile -->
+      <button class="mobile-menu-btn" aria-controls="nav-links-mobile" aria-expanded="false">
+        <span class="lang-fr"><span class="visually-hidden">Ouvrir le menu</span></span>
+        <span class="lang-en"><span class="visually-hidden">Open menu</span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>
+          <span class="lang-fr">Découvrez <span class="hero-highlight">Mae</span> : un parcours unique entre <span class="hero-highlight">soins</span> & <span class="hero-highlight">marketing</span></span>
+          <span class="lang-en">Meet <span class="hero-highlight">Mae</span>: a unique journey between <span class="hero-highlight">care</span> & <span class="hero-highlight">marketing</span></span>
+        </h1>
+        <p class="hero-subtitle">
+          <span class="lang-fr">Marketing manager & professeure adjointe (FAU), ex-infirmière BSN/MS, enseignante à ISCOM Paris : un profil multiculturel et multidisciplinaire qui allie rigueur clinique et excellence marketing.</span>
+          <span class="lang-en">Marketing manager & adjunct professor (FAU), former nurse BSN/MS, instructor at ISCOM Paris: a multicultural and multidisciplinary profile combining clinical rigor with marketing excellence.</span>
+        </p>
+      </div>
+      
+      <!-- AMÉLIORATION SÉMANTIQUE & PERFORMANCE : Remplacement du div par une balise image optimisée -->
+      <figure class="hero-image-container">
+        <img 
+          src="images/mae-basiratmand-profile.webp" 
+          alt="Photo professionnelle de Mae Basiratmand, consultante en marketing médical" 
+          width="400" 
+          height="400" 
+          loading="lazy" 
+          decoding="async">
+      </figure>
+
+    </div>
+  </section>
+
+  <!-- Overview Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="lang-fr">Un profil d'exception</span>
+          <span class="lang-en">An exceptional profile</span>
+        </h2>
+        <p class="section-subtitle">
+          <span class="lang-fr">La seule consultante marketing avec une véritable expertise clinique et une compréhension profonde du monde médical</span>
+          <span class="lang-en">The only marketing consultant with true clinical expertise and deep understanding of the medical world</span>
+        </p>
+      </div>
+      
+      <div class="grid grid-3">
+        <div class="card fade-in">
+          <h3>
+            <span class="lang-fr">Général & positions</span>
+            <span class="lang-en">General & positions</span>
+          </h3>
+          <p>
+            <span class="lang-fr">Marketing manager & professeure adjointe à Florida Atlantic University (Executive Education & College of Business). Elle élabore des stratégies marketing multi-canaux : optimisation web, médias payants, communication corporate, vidéo, événements & affichage.</span>
+            <span class="lang-en">Marketing manager & adjunct professor at Florida Atlantic University (Executive Education & College of Business). She develops cross-channel marketing strategies: web optimization, paid media, corporate communication, video, events & billboards.</span>
+          </p>
+          <p>
+            <span class="lang-fr">Elle enseigne le marketing digital & les médias sociaux aux étudiants et intervient régulièrement auprès des programmes MBA et Executive Master of Health Administration.</span>
+            <span class="lang-en">She teaches digital marketing & social media to students and regularly gives guest lectures for MBA and Executive Master of Health Administration programs.</span>
+          </p>
+          <p>
+            <span class="lang-fr">Forte de son expertise clinique en santé mentale, elle apporte des perspectives uniques et éthiques aux campagnes marketing, en reliant science et storytelling.</span>
+            <span class="lang-en">Drawing on her clinical expertise in mental health, she brings unique and ethical perspectives to marketing campaigns, bridging science and storytelling.</span>
+          </p>
+        </div>
+        
+        <div class="card fade-in">
+          <h3>
+            <span class="lang-fr">Parcours & formation</span>
+            <span class="lang-en">Background & education</span>
+          </h3>
+          <p>
+            <span class="lang-fr">Détentrice d'un BSN en sciences infirmières (Université de Floride) et d'un MS en communication stratégique (Columbia University). Infirmière diplômée licenciée dans trois États (NY, FL, CA), elle met à profit son expertise en santé mentale pour apporter des insights cliniques aux campagnes marketing.</span>
+            <span class="lang-en">She holds a BSN in nursing (University of Florida) and an MS in strategic communication (Columbia University). A registered nurse licensed in three states (NY, FL & CA), she leverages her mental health expertise to bring clinical insights to marketing campaigns.</span>
+          </p>
+          <p>
+            <span class="lang-fr">Cette double formation unique lui permet de naviguer entre les contraintes réglementaires du secteur médical et les exigences de performance du marketing moderne, créant des solutions à la fois conformes et innovantes.</span>
+            <span class="lang-en">This unique dual background allows her to navigate between the regulatory constraints of the medical sector and the performance requirements of modern marketing, creating solutions that are both compliant and innovative.</span>
+          </p>
+        </div>
+        
+        <div class="card fade-in">
+          <h3>
+            <span class="lang-fr">International & créativité</span>
+            <span class="lang-en">International & creativity</span>
+          </h3>
+          <p>
+            <span class="lang-fr">Entre les États-Unis et la France, Mae enseigne à la FAU à Boca Raton et à l'ISCOM à Paris. Passionnée de storytelling, elle écrit actuellement son premier roman et prépare une étude de cas en marketing digital pour ses étudiants.</span>
+            <span class="lang-en">Between the US and France, Mae teaches at FAU in Boca Raton and at ISCOM in Paris. Passionate about storytelling, she is currently writing her first novel and preparing a digital marketing case study for her students.</span>
+          </p>
+          <p>
+            <span class="lang-fr">Elle partage son expertise lors de sommets numériques comme le Stukent Digital Summit et participe à des événements culturels, notamment en lisant "The Perks of Being a Wallflower" pendant la Banned Books Week.</span>
+            <span class="lang-en">She shares her expertise at digital summits such as the Stukent Digital Summit and takes part in cultural events, including reading "The Perks of Being a Wallflower" during Banned Books Week.</span>
+          </p>
+          <p>
+            <span class="lang-fr">Elle a également publié des articles culturels et lifestyle pour The Independent Florida Alligator, traitant de sujets comme les salons d'artisanat, les boissons et les costumes DIY.</span>
+            <span class="lang-en">She also published culture and lifestyle pieces for The Independent Florida Alligator, covering topics like craft shows, healthy drinks and DIY costumes.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Credentials -->
+  <section class="section" style="background: linear-gradient(135deg, var(--primary-50) 0%, var(--accent-50) 100%);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="lang-fr">Formation & licences</span>
+          <span class="lang-en">Education & licenses</span>
+        </h2>
+        <p class="section-subtitle">
+          <span class="lang-fr">L'excellence académique pour des fondations solides dans les soins et le marketing</span>
+          <span class="lang-en">Academic excellence for solid foundations in care and marketing</span>
+        </p>
+      </div>
+      
+      <div class="credentials-grid">
+        <div class="credential-item fade-in">
+          <!-- AMÉLIORATION ACCESSIBILITÉ : Icône décorative cachée -->
+          <div class="credential-icon" aria-hidden="true">🎓</div>
+          <div class="credential-title">BSN - Université de Floride</div>
+          <div class="credential-detail"><span class="lang-fr">Bachelor of Science en sciences infirmières</span><span class="lang-en">Bachelor of Science in Nursing Sciences</span></div>
+          <div class="credential-date">2012</div>
+        </div>
+        
+        <div class="credential-item fade-in">
+          <div class="credential-icon" aria-hidden="true">📚</div>
+          <div class="credential-title">MS - Columbia University</div>
+          <div class="credential-detail"><span class="lang-fr">Master of Science en communication stratégique</span><span class="lang-en">Master of Science in Strategic Communication</span></div>
+          <div class="credential-date">2014</div>
+        </div>
+        
+        <div class="credential-item fade-in">
+          <div class="credential-icon" aria-hidden="true">🏥</div>
+          <div class="credential-title"><span class="lang-fr">Licence RN - 3 États</span><span class="lang-en">RN License - 3 States</span></div>
+          <div class="credential-detail">New York, Floride, Californie</div>
+          <div class="credential-date"><span class="lang-fr">Active</span><span class="lang-en">Active</span></div>
+        </div>
+        
+        <div class="credential-item fade-in">
+          <div class="credential-icon" aria-hidden="true">🎯</div>
+          <div class="credential-title"><span class="lang-fr">Spécialisation Santé Mentale</span><span class="lang-en">Mental Health Specialization</span></div>
+          <div class="credential-detail"><span class="lang-fr">Expertise clinique en patient care</span><span class="lang-en">Clinical expertise in patient care</span></div>
+          <div class="credential-date"><span class="lang-fr">Certifiée</span><span class="lang-en">Certified</span></div>
+        </div>
+        
+        <div class="credential-item fade-in">
+          <div class="credential-icon" aria-hidden="true">🏆</div>
+          <div class="credential-title"><span class="lang-fr">Prix Cannes Lions</span><span class="lang-en">Cannes Lions Awards</span></div>
+          <div class="credential-detail">Grand Prix + Silver Lion Pharma</div>
+          <div class="credential-date">2015</div>
+        </div>
+        
+        <div class="credential-item fade-in">
+          <div class="credential-icon" aria-hidden="true">🎪</div>
+          <div class="credential-title">FAU College of Business</div>
+          <div class="credential-detail"><span class="lang-fr">Professeure adjointe & Marketing Manager</span><span class="lang-en">Adjunct Professor & Marketing Manager</span></div>
+          <div class="credential-date"><span class="lang-fr">Depuis 2016</span><span class="lang-en">Since 2016</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="lang-fr">Parcours professionnel</span>
+          <span class="lang-en">Professional journey</span>
+        </h2>
+        <p class="section-subtitle">
+          <span class="lang-fr">Un cheminement unique de l'hôpital aux plus grandes agences, jusqu'à l'enseignement international</span>
+          <span class="lang-en">A unique path from hospital to major agencies, to international teaching</span>
+        </p>
+      </div>
+      
+      <div class="timeline">
+        <div class="timeline-item fade-in">
+          <div class="timeline-date">2012</div>
+          <h3 class="timeline-title"><span class="lang-fr">Obtention du BSN - Université de Floride</span><span class="lang-en">BSN Graduation - University of Florida</span></h3>
+          <p class="timeline-description"><span class="lang-fr">Obtention du Bachelor of Science en sciences infirmières à l'Université de Floride, posant les bases d'une rigueur scientifique et d'une approche empathique du patient. Formation en santé mentale et patient care.</span><span class="lang-en">Earned Bachelor of Science in nursing from the University of Florida, laying the groundwork for scientific rigor and an empathetic approach to patients. Training in mental health and patient care.</span></p>
+        </div>
+        
+        <div class="timeline-item fade-in">
+          <div class="timeline-date">2014</div>
+          <h3 class="timeline-title"><span class="lang-fr">MS Communication Stratégique - Columbia University</span><span class="lang-en">MS Strategic Communication - Columbia University</span></h3>
+          <p class="timeline-description"><span class="lang-fr">Après son diplôme de BSN, Mae décroche un MS en communication stratégique à Columbia University et se spécialise dans le storytelling et la communication stratégique. Cette double formation unique la positionne à l'intersection de la science et de la créativité.</span><span class="lang-en">After earning her BSN, Mae completed an MS in strategic communication at Columbia University, specializing in storytelling and strategic communications. This unique dual background positions her at the intersection of science and creativity.</span></p>
+        </div>
+        
+        <div class="timeline-item fade-in">
+          <div class="timeline-date">2013–2016</div>
+          <h3 class="timeline-title"><span class="lang-fr">Agences de publicité, New York</span><span class="lang-en">Advertising agencies, New York</span></h3>
+          <p class="timeline-description"><span class="lang-fr">Chez DigitasLBi et FCB Health, elle travaille pour des clients pharmaceutiques prestigieux (AstraZeneca, Actavis, Forest Laboratories, Pfizer, Galderma). Elle est actrice clé d'une campagne de sensibilisation aux maladies ayant remporté le Grand Prix et un Lion d'argent aux Cannes Lions Pharma. Parallèlement, elle collabore avec Hearst Magazines pour Cosmopolitan, O Magazine, Esquire et Seventeen.</span><span class="lang-en">At DigitasLBi and FCB Health she served prestigious pharmaceutical clients (AstraZeneca, Actavis, Forest Laboratories, Pfizer, Galderma). She played a key role in a disease-awareness campaign that won the Cannes Lions Pharma Grand Prix and a Silver Lion. In parallel, she collaborated with Hearst Magazines for Cosmopolitan, O Magazine, Esquire and Seventeen.</span></p>
+        </div>
+        
+        <div class="timeline-item fade-in">
+          <div class="timeline-date">2016–présent</div>
+          <h3 class="timeline-title"><span class="lang-fr">FAU Executive Education & College of Business</span><span class="lang-en">FAU Executive Education & College of Business</span></h3>
+          <p class="timeline-description"><span class="lang-fr">Marketing manager et professeure adjointe. Elle élabore des stratégies marketing multi-canaux (optimisation web, médias payants, communication corporate, vidéo, événements, affichage) tout en enseignant le marketing digital et les médias sociaux aux étudiants de licence, MBA et Executive MHA. Elle anime également des webinaires et workshops pour professionnels.</span><span class="lang-en">Marketing manager and adjunct professor. She spearheads cross-channel marketing strategies (web optimization, paid media, corporate communications, video, events, billboards) while teaching digital marketing and social media to undergraduate, MBA and Executive MHA students. She also hosts webinars and workshops for professionals.</span></p>
+        </div>
+        
+        <div class="timeline-item fade-in">
+          <div class="timeline-date">2025–présent</div>
+          <h3 class="timeline-title">ISCOM Paris</h3>
+          <p class="timeline-description"><span class="lang-fr">Enseignante en création de contenu et communication d'entreprise depuis février 2025 à l'ISCOM Paris, elle partage son expertise internationale en marketing digital et stratégie de marque. Cette position transcontinentale lui permet d'apporter une perspective unique aux étudiants français sur les meilleures pratiques américaines et la communication cross-culturelle.</span><span class="lang-en">Instructor in content creation and corporate communication since February 2025 at ISCOM Paris, sharing her international expertise in digital marketing and brand strategy. This transcontinental position allows her to bring a unique perspective to French students on American best practices and cross-cultural communication.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Competencies -->
+  <section class="section" style="background: var(--gray-50);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title"><span class="lang-fr">Compétences clés</span><span class="lang-en">Core competencies</span></h2>
+        <p class="section-subtitle"><span class="lang-fr">Un ensemble unique de compétences alliant expertise clinique et excellence marketing</span><span class="lang-en">A unique set of skills combining clinical expertise with marketing excellence</span></p>
+      </div>
+      
+      <div class="grid grid-2">
+        <div class="card fade-in">
+          <h3><span class="lang-fr">Marketing & communication</span><span class="lang-en">Marketing & communications</span></h3>
+          <ul style="list-style: none; padding: 0; margin-top: 1rem;">
+            <li style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; color: var(--gray-700);"><span style="display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; background: var(--success-100); color: var(--success-600); border-radius: 50%; font-weight: 700; font-size: 12px;">✓</span><span class="lang-fr">Marketing digital & médias sociaux, SEO/SEA, ABM</span><span class="lang-en">Digital marketing & social media, SEO/SEM, ABM</span></li>
+            <li style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; color: var(--gray-700);"><span style="display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; background: var(--success-100); color: var(--success-600); border-radius: 50%; font-weight: 700; font-size: 12px;">✓</span>CRM & stratégies de contenu</li>
+            <li style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; color: var(--gray-700);"><span style="display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; background: var(--success-100); color: var(--success-600); border-radius: 50%; font-weight: 700; font-size: 12px;">✓</span><span class="lang-fr">Communication d'entreprise & relations médias</span><span class="lang-en">Corporate comms & media relations</span></li>
+            <li style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; color: var(--gray-700);"><span style="display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; background: var(--success-100); color: var(--success-600); border-radius: 50%; font-weight: 700; font-size: 12px;">✓</span><span class="lang-fr">Campagnes pharma & med-tech conformes</span><span class="lang-en">Compliant pharma & med-tech campaigns</span></li>
+            <li style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; color: var(--gray-700);"><span style="display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; background: var(--success-100); color: var(--success-600); border-radius: 50%; font-weight: 700; font-size: 12px;">✓</span><span class="lang-fr">Gestion de réputation & crisis management</span><span class="lang-en">Reputation management & crisis management</span></li>
+          </ul>
+        </div>
+        
+        <div class="card fade-in">
+          <h3><span class="lang-fr">Leadership & formation</span><span class="lang-en">Leadership & education</span></h3>
+          <ul style="list-style: none; padding: 0; margin-top: 1rem;">
+            <li style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; color: var(--gray-700);"><span style="display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; background: var(--success-100); color: var(--success-600); border-radius: 50%; font-weight: 700; font-size: 12px;">✓</span><span class="lang-fr">Conception de programmes & ateliers</span><span class="lang-en">Program & workshop design</span></li>
+            <li style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; color: var(--gray-700);"><span style="display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; background: var(--success-100); color: var(--success-600); border-radius: 50%; font-weight: 700; font-size: 12px;">✓</span><span class="lang-fr">Partenariats avec agences & partenaires</span><span class="lang-en">Agency & partner partnerships</span></li>
+            <li style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; color: var(--gray-700);"><span style="display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; background: var(--success-100); color: var(--success-600); border-radius: 50%; font-weight: 700; font-size: 12px;">✓</span><span class="lang-fr">Planification stratégique & gestion de budget</span><span class="lang-en">Strategic planning & budget management</span></li>
+            <li style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; color: var(--gray-700);"><span style="display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; background: var(--success-100); color: var(--success-600); border-radius: 50%; font-weight: 700; font-size: 12px;">✓</span><span class="lang-fr">Conformité HIPAA & réglementations médicales</span><span class="lang-en">HIPAA compliance & medical regulations</span></li>
+            <li style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; color: var(--gray-700);"><span style="display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; background: var(--success-100); color: var(--success-600); border-radius: 50%; font-weight: 700; font-size: 12px;">✓</span><span class="lang-fr">Enseignement international & mentorat</span><span class="lang-en">International teaching & mentorship</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section" style="background: linear-gradient(135deg, var(--gray-900) 0%, var(--primary-900) 100%); color: white;">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" style="color: white;"><span class="lang-fr">Prêt à transformer votre marketing médical ?</span><span class="lang-en">Ready to transform your medical marketing?</span></h2>
+        <p class="section-subtitle" style="color: rgba(255,255,255,0.8);"><span class="lang-fr">Bénéficiez d'une expertise unique alliant rigueur clinique et excellence marketing</span><span class="lang-en">Benefit from unique expertise combining clinical rigor with marketing excellence</span></p>
+      </div>
+      
+      <!-- CORRECTION : Suppression du bouton dupliqué -->
+      <div style="text-align: center;">
+        <a href="contact.html" class="btn btn-primary" style="margin-right: 1rem;"><span class="lang-fr">Réserver un appel gratuit</span><span class="lang-en">Book a free call</span></a>
+        <a href="index.html#case-studies" class="btn btn-secondary"><span class="lang-fr">Voir les résultats</span><span class="lang-en">See results</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h4 class="footer-title">Mae Basiratmand Consulting</h4>
+          <p class="footer-description"><span class="lang-fr">Marketing éthique pour le secteur de la santé, alliant expertise clinique et stratégies de croissance performantes.</span><span class="lang-en">Ethical marketing for the healthcare sector, combining clinical expertise with high-performing growth strategies.</span></p>
+          <a href="contact.html" class="btn btn-secondary" style="margin-top: 1rem;"><span class="lang-fr">Réserver un appel gratuit</span><span class="lang-en">Book a Free Call</span></a>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-title"><span class="lang-fr">Navigation</span><span class="lang-en">Navigation</span></h4>
+          <ul class="footer-links">
+            <li><a href="about.html"><span class="lang-fr">À propos</span><span class="lang-en">About</span></a></li>
+            <li><a href="experience.html"><span class="lang-fr">Expérience</span><span class="lang-en">Experience</span></a></li>
+            <li><a href="achievements.html"><span class="lang-fr">Réalisations</span><span class="lang-en">Achievements</span></a></li>
+            <li><a href="index.html#case-studies"><span class="lang-fr">Cas Clients</span><span class="lang-en">Case Studies</span></a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-title"><span class="lang-fr">Services & Aide</span><span class="lang-en">Services & Help</span></h4>
+          <ul class="footer-links">
+            <li><a href="index.html#services"><span class="lang-fr">Tous les services</span><span class="lang-en">All Services</span></a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="index.html#resources"><span class="lang-fr">Ressources gratuites</span><span class="lang-en">Free Resources</span></a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-title"><span class="lang-fr">Contact & Social</span><span class="lang-en">Contact & Social</span></h4>
+          <ul class="footer-links">
+            <li><a href="mailto:mae@healthcare-marketing.expert">mae@healthcare-marketing.expert</a></li>
+            <li><a href="https://linkedin.com/in/mae-basiratmand" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><span class="lang-fr">Boca Raton, FL & Paris, FR</span><span class="lang-en">Boca Raton, FL & Paris, FR</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-text"><span class="lang-fr">© 2025 Mae Basiratmand Consulting. Tous droits réservés.</span><span class="lang-en">© 2025 Mae Basiratmand Consulting. All rights reserved.</span></div>
+        <ul class="footer-legal-links">
+          <li><a href="privacy.html"><span class="lang-fr">Confidentialité</span><span class="lang-en">Privacy</span></a></li>
+          <li><a href="legal.html"><span class="lang-fr">Mentions Légales</span><span class="lang-en">Legal Notice</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top button -->
+  <button class="scroll-top" id="scrollTop">↑</button>
+
+  <!-- AMÉLIORATION PERFORMANCE : Scripts chargés en mode "defer" -->
+  <script src="js/core.js" defer></script>
+  <script src="js/pages.js" defer></script>
+</body>
+</html>
